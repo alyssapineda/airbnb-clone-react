@@ -11,12 +11,6 @@ body {
 }
 
 /* NAVBAR */
-nav {
-  height:70px;
-  display:flex;
-  padding:20px 36px;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
-}
 
 .nav--logo {
   /* fix problem for safari */
@@ -34,7 +28,7 @@ nav {
 /* HERO */
 
 section {
-  padding:20px;
+  padding:10px;
 }
 
 .hero {
@@ -63,11 +57,20 @@ section {
 .card {
   width:175px;
   font-size:12px;
+  display: flex;       
+  flex: 0 0 auto;   
+  flex-direction: column;
+  position:relative;
 }
 
+.card--title {
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
 .card--photo {
   width:100%;
   border-radius:9px;
+  margin-bottom:9px;
 }
 
 .card--stats {
@@ -79,3 +82,25 @@ section {
   height:14px;
 }
 
+.card--price {
+  margin-top:auto;
+}
+
+.cards-list {
+  display:flex;
+  flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  gap: 5px;
+  overflow-x: auto;
+}
+
+.card--badge {
+  position:absolute;
+  border-radius:6px;
+  top:20px;
+  left:20px;
+  color:#000;
+  padding:5px 6px;
+  font-weight:bold;
+  background-color:#fff;
+}

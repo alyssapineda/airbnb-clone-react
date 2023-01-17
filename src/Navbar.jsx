@@ -1,9 +1,9 @@
-import logo from './assets/airbnb-logo.png'
+// import logo from './assets/airbnb-logo.png'
 
 export default function Navbar() {
   return (
-    <nav>
-      <img src={logo} alt="logo" className="nav--logo" />
-    </nav>
+    <section className="nav">
+      <img src="../assets/airbnb-logo.png" alt="logo" className="nav--logo" />
+    </section>
   )
 }
