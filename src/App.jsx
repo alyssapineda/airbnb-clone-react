@@ -6,17 +6,7 @@ import Hero from './Hero'
 import Card from './Card'
 import data from './data'
 
-/*
-Challenge:
-
-- import the array of data from data.js
-- map over the array to create <Card /> components
-- display the array of card components under the navbar
-  (in place of the current <Card /> component)
-
-Note: We haven't styled the group of components yet, so they'll
-still be block elements, stacked vertically. We'll add styling later.
-*/
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals
 
 function App() {
 
@@ -24,7 +14,7 @@ function App() {
     return (
       <Card
         key = {cards.id} 
-        cards = {cards}
+        {...cards}
       />
     )
   })
